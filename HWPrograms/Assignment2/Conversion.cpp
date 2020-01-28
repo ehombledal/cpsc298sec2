@@ -37,8 +37,8 @@ void calculate()
   double totalFeet = userFeet + (userInch/INCH_TO_FOOT);
   double meterHolder = totalFeet*METER_TO_FOOT;
 
-  convertedMeter = meterHolder;
-  convertedCentimeter = (meterHolder - convertedMeter) * CM_TO_METER;
+  convertedMeter = meterHolder; //truncates double to int for output 
+  convertedCentimeter = (meterHolder - convertedMeter) * CM_TO_METER; //uses difference between int truncation and double value to get decimal
 }
 
 void printOutput()
