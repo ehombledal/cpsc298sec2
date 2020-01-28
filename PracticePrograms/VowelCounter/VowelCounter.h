@@ -14,6 +14,9 @@ class VowelCounter
     VowelCounter();
     int countVowels(string input);
 
+
+    //normally you have get and sets as well
+
   private:
-    //no private members
+    //no private members, normally member variables go here 
 }; //NEED A SEMICOLON AFTER CLASS DECLARATIONS

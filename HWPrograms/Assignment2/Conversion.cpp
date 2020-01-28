@@ -22,7 +22,7 @@ void getUserInput()
 
   cout << "Please enter \"exit\" to exit, or \"C\" to continue" << endl;
   cin >> userInput;
-  if (userInput != "exit")
+  if (userInput != "exit") //continue input doesnt actually matter...
   {
     cout << "Enter how many feet: ";
     cin >> userFeet;
@@ -37,7 +37,7 @@ void calculate()
   double totalFeet = userFeet + (userInch/INCH_TO_FOOT);
   double meterHolder = totalFeet*METER_TO_FOOT;
 
-  convertedMeter = meterHolder; //truncates double to int for output 
+  convertedMeter = meterHolder; //truncates double to int for output
   convertedCentimeter = (meterHolder - convertedMeter) * CM_TO_METER; //uses difference between int truncation and double value to get decimal
 }
 
