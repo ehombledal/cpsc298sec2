@@ -9,5 +9,8 @@ int main(int argc, char **argv)
   pet1 -> print();
   pet2 -> print();
 
+  delete pet1;
+  delete pet2;
+
   return -0;
 }
